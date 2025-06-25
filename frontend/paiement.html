@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement-Café  Paypal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=AQaCTi7CMZ61xqNkk-BnnaVBInFWwOhgsaqIv_XNfdafcmRqj3IgOHDNyRHfOO7qAUB6B_oftlv5px8O" data-uid-auto="uid_tcgrtuisgjhwafrisewywfrqccypzs"></script>
+    
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                ☕
+                <em> Acheter du Café Touba en Capsules</em>
+            </h1> 
+            <p>Prix : 5.50</p>
+            <div id="paypal-button-container-1">
+                <div id=""></div>
+            </div>
+        </div>
+        <script>
+            function initPayPalButton(id, price) {
+                paypal.Buttons({
+                    createOrder: function(data, actions) {
+                        return actions.order.create({
+                            purchase_units: [{ amount: { value: price } }]
+                        });
+                    },
+                    onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(details) {
+                            alert('Paiement réussi pour ' + details.payer.name.given_name);
+                        });
+                    }
+                }).render('#paypal-button-container-' + id);
+            }
+            
+            initPayPalButton(1, "10");
+            initPayPalButton(2, "12");
+        </script>
+    </body>
+    
