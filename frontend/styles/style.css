@@ -1,0 +1,30 @@
+body{
+    /* background-color: black; */
+    width: 100vw;
+    height: min-content;
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+.logo-content{
+    font-size: 3rem;
+
+}
+.menu-content > li{
+    display: flex;
+}

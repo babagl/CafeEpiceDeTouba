@@ -4,68 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Café Touba</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=EUR"></script>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-
-    <!-- En-tête avec navigation -->
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="/images/image logo1.JPG" alt="Logo Café Touba">
-            </a>
-            
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#catalogue">Catalogue</a></li>
-                <li><a href="#paiement">Paiement sécurisé</a></li>
-                <li><a href="#blogs">Blogs et conseils</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Section Accueil immersive -->
-    <section id="accueil">
-        <div class="overlay"></div>
-        <div class="content">
-            <h2>Découvrez l’authenticité du Café Touba</h2>
-            <p>Un café riche en saveurs et en traditions.</p>
-            <h2>Historique</h2>
-            <p><b>Le café Touba </b>est une boisson composée de café aromatisé au poivre de Guinée ou piment noir – <br>jar (prononcez diar) en wolof – </br>une épice tirée du fruit séché du Xylopia aethiopica, <br>un arbre des pays du golfe de Guinée. Le piment noir, importé au Sénégal de la Côte d'Ivoire ou du Gabon, est moulu et mélangé au café.</br></p>
-            <a href="#catalogue" class="btn">Voir le catalogue</a>
+    <!-- C'est ici qu'on doit mettre le header -->
+     <header>
+        <div class="header-container">
+            <div class="logo-content">
+                logo
+            </div>
+            <div class="menu-content">
+                <li>
+                    <ul>Accueil</ul>
+                    <ul>Produits</ul>
+                    <ul>Boutique</ul>
+                    <ul>Supports</ul>
+                </li>
+            </div>
+            <div class="login-content">
+                connexion
+            </div>
         </div>
-    </section>
+     </header>
+</body>
 
-    <!-- Section Catalogue -->
-    <section id="catalogue" class="catalogue">
-        <h2>Nos Produits</h2>
-        <div class="produit">
-            <img src="/images/alexander-jawfox-F-6v14W67Ak-unsplash.jpg" alt="Café en grains">
-            <h3>Café en grains</h3>
-            <p>Un café pur et intense.</p>
-            <span>Prix : 10€</span>
-            <div id="paypal-button-container-1"></div>
-        </div>
-        <div class="produit">
-            <img src="/images/capsules.JPG" alt="Café moulu">
-            <h3>Café Touba en Capsules </h3>
-            <p>Idéal pour une infusion rapide.</p>
-            <span>Prix : 5€</span>
-            <div id="paypal-button-container-2"></div>
-        </div>
-        <div class="produit">
-            <img src="/images/Café en Poudre.jpg" alt="Café moulu">
-            <h3>Café moulu</h3>
-            <p>Idéal pour une infusion rapide.</p>
-            <span>Prix : 6€</span>
-            <div id="paypal-button-container-2"></div>
-    </section>
 
-    <!-- Section Contact test-->
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <p>Email: contact@cafetouba.com</p>
-        <p>Téléphone: 06 12 34 56 78</p>
-    </section>
